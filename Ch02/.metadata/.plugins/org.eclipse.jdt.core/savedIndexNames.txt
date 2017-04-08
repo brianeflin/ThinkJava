@@ -1,0 +1,3 @@
+INDEX VERSION 1.130+/Users/brian/Projects/eclipse/ThinkJava/Ch02/.metadata/.plugins/org.eclipse.jdt.core
+2925201552.index
+1800513455.index
