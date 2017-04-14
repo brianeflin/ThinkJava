@@ -5,7 +5,7 @@ public class Main {
 		
 		int i = 100;
 		double d = 99.0;
-		
+		System.out.printf("int i = %d, double d = %f", i, d);
 	}
 
 }

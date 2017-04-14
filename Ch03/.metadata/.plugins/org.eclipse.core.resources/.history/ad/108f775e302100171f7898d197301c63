@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+			
+		double celsius;
+		double fahr;
+		Scanner scnr = new Scanner(System.in);
+		
+		System.out.print("Input temperature in Celsius: ");
+		celsius = scnr.nextDouble();
+		
+		fahr = celsius * 9.0 / 5.0 + 32;
+		
+		System.out.printf("%.1f C = $.1f F", celsius, fahr);
+		
+		scnr.close();
+	}
+
+}

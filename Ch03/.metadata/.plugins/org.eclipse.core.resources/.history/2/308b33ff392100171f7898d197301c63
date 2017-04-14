@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int elapsedTimeInSeconds = 0;
+		int hours = 0;
+		int minutes = 0;
+		int seconds = 0;
+		
+		Scanner scnr = new Scanner(System.in);
+		
+		System.out.print("Input elapsed time in seconds: ");
+		scnr.nextInt(elapsedTimeInSeconds);
+		
+		hours = elapsedTimeInSeconds / 3600;
+		minutes = elapsedTimeInSeconds % 3600 / 60;
+		seconds = elapsedTimeInSeconds % 3600;
+		
+		System.out.printf("%d seconds = %d hours %d minutes %d seconds", 
+				elapsedTimeInSeconds, hours, minutes, seconds);
+		
+		scnr.close();
+	}
+
+}
