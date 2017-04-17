@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+
+	private static Scanner scanner;
+	
+	public static void main(String[] args) {
+		
+		scanner = new Scanner(System.in);
+		Random random = new Random();
+		int number = random.nextInt(100) + 1;
+		
+		System.out.println("I'm thinking of a number between 1 and 100 inclusive.");
+		System.out.print("Guess what it is: ");
+		
+		getGuess(number);
+		scanner.close();
+	}
+	
+	private static void getGuess(int num) {
+		
+		int guess = 0;
+		guess = scanner.nextInt();
+		
+		if (guess == num) {
+			System.out.println("That's it! Good guess!");
+		} else if (guess < num) {
+			System.out.println("Too low. Try again:");
+			getGuess(num);
+		} else if (guess > num) {
+			System.out.println("Too high. Try again:");
+			getGuess(num);
+		}
+	}
+}

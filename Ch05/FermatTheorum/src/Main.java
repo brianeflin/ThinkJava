@@ -1,0 +1,27 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		boolean exceptionFound = false;
+		for (int n = 3; n < 6; n++) {
+			for (int c = 2; c < 30; c++) {
+				for (int b = 1; b < Math.pow(c, n); b++) {
+					for (int a = 1; Math.pow(a, n) < Math.pow(c, n) - Math.pow(b, n); a++) {
+						System.out.printf("a = %d, b = %d, c = %d, n = %d - ", a, b, c, n);
+						if (checkFermat(a, b, c, n)) {
+							System.out.printf("Holy smoke! Fermat was wrong!\n");
+							exceptionFound = true;
+						} else {
+							System.out.printf("Fermat was correct.\n");
+						}
+					}
+				}
+			}
+		}
+		System.out.println("exceptionFound = " + exceptionFound);
+	}
+	
+	private static boolean checkFermat(int a, int b, int c, int n) {
+		return Math.pow(a, n) + Math.pow(b, n) == Math.pow(c, n);
+	}
+}
