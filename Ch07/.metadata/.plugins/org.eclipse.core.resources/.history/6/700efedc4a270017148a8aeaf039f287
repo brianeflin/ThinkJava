@@ -1,0 +1,19 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static int factorial(int x) {
+		
+		int answer = 1;
+		
+		for (int i = x; i > 0; i--) {
+			answer = answer * i;
+		}
+		
+		return answer;
+	}
+}

@@ -1,0 +1,37 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		double x = 1.0;
+		int n = 2;
+		check(x, n);
+		
+	}
+	
+	private static void check(double x, int n) {
+		System.out.println(x + "\t" + myExp(x, n) + "\t" + Math.exp(x));
+	}
+	
+	private static double myExp(double x, int iterations) {
+		
+		double answer = 1 + x;
+		
+		for (int i = 2; i <= iterations; i++) {
+			answer += Math.pow(x, i) / factorial(i);
+		}
+		
+		return answer;
+	}
+
+	private static int factorial(int num) {
+		
+		int answer = 1;
+		
+		for (int i = num; i > 0; i--) {
+			answer *= i;
+		}
+		
+		return answer;
+	}
+}
