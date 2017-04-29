@@ -1,0 +1,30 @@
+
+public class Main {
+
+public static void main(String[] args) {
+		
+		int number = 51;
+		
+		System.out.println(isPrime(number));
+	}
+
+	private static boolean arePrimeFactors(int number, int[] factors) {
+		
+		for (int factor : factors) {
+			if (number % factor != 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	private static boolean isPrime(int num) {
+		
+		for (int i = 2; i <= Math.sqrt(num); i++) {
+			if (num % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+}

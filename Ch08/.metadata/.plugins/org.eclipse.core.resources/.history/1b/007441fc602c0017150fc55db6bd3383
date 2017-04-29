@@ -1,0 +1,21 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int[] numbers = {5, 4, 6, 3, 7, 2, 8, 1, 8};
+		iterate(numbers, 0);
+	}
+
+	private static int maxInRange(int[] numbers) {
+		return 0;
+	}
+	
+	private static void iterate(int[] numbers, int index) {
+		if (index < numbers.length - 1) {
+			System.out.println(numbers[index]);
+			index++;
+			iterate(numbers, index);
+		}
+	}
+}

@@ -1,0 +1,29 @@
+
+public class Main {
+	
+	static int maxNumberInRange;
+
+	public static void main(String[] args) {
+		
+		int[] numbers = {5, 6, 4, 7, 3, 8, 2, 9, 1, 10};
+		int lowIndex = 2;
+		int highIndex = 2;
+		maxNumberInRange = numbers[lowIndex];
+		iterate(numbers, lowIndex, highIndex);
+		System.out.println(maxNumberInRange);
+	}
+
+	private static void maxInRange(int[] numbers) {
+		
+	}
+	
+	private static void iterate(int[] numbers, int lowIndex, int highIndex) {
+		if (lowIndex < 0) lowIndex = 0;
+		if (highIndex >= numbers.length) highIndex = numbers.length - 1;
+		if (lowIndex <= highIndex) {
+			if (numbers[lowIndex] > maxNumberInRange) maxNumberInRange = numbers[lowIndex];
+			lowIndex++;
+			iterate(numbers, lowIndex, highIndex);
+		}
+	}
+}

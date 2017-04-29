@@ -1,0 +1,24 @@
+
+public class Main {
+	
+	static int maxNumberInRange;
+
+	public static void main(String[] args) {
+		
+		int[] numbers = {5, 6, 4, 7, 3, 8, 2, 9, 1, 10};
+		maxNumberInRange = numbers[0];
+		System.out.println(maxNumberInRange);
+	}
+
+	private static void maxInRange(int[] numbers) {
+		
+	}
+	
+	private static void iterate(int[] numbers, int index) {
+		if (index < numbers.length) {
+			if (numbers[index] > maxNumberInRange) maxNumberInRange = numbers[index];
+			index++;
+			iterate(numbers, index);
+		}
+	}
+}

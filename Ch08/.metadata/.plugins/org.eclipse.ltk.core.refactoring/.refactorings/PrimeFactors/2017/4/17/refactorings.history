@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;Main.areFactors(...)&apos; to &apos;arePrimeFactors&apos;&#x0A;- Original project: &apos;PrimeFactors&apos;&#x0A;- Original element: &apos;Main.areFactors(...)&apos;&#x0A;- Renamed element: &apos;Main.arePrimeFactors(...)&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;areFactors&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{Main.java[Main~areFactors~I~\[I" name="arePrimeFactors" references="true" stamp="1493409267270" version="1.0"/>
+</session>

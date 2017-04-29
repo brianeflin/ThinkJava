@@ -1,0 +1,5 @@
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.wst.sse.ui
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.wst.sse.ui.textfont
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
+eclipse.preferences.version=1
+org.eclipse.wst.sse.ui.textfont=1|Monaco|12.0|0|COCOA|1|Monaco;

@@ -1,0 +1,21 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int number = 51;
+		int[] factors = {3, 17};
+		
+		System.out.println(areFactors(number, factors));
+	}
+
+	private static boolean areFactors(int number, int[] factors) {
+		
+		for (int factor : factors) {
+			if (number % factor != 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+}
