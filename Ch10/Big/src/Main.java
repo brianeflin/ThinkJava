@@ -1,0 +1,23 @@
+
+import java.math.BigInteger;
+
+public class Main {
+
+	public static void main(String[] args) {
+			
+		for (int i = 0; i <= 30; i++) {
+			System.out.println(i + "! = " + factorial(i));
+		}
+	}
+	
+	private static BigInteger factorial(int num) {
+		
+		BigInteger result = BigInteger.valueOf(num);
+		
+		for (int i = num - 1; i > 1; i--) {
+			result = result.multiply(BigInteger.valueOf(i));
+		}
+		
+		return result;
+	}
+}
