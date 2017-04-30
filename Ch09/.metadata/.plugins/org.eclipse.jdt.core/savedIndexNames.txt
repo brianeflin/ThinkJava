@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+/Users/brian/Projects/eclipse/ThinkJava/Ch09/.metadata/.plugins/org.eclipse.jdt.core
+1056894076.index
+1824969415.index
+3485523566.index

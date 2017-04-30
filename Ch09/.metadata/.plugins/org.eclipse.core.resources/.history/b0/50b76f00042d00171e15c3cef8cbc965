@@ -1,0 +1,28 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String s = "In the beginning was the word";
+		System.out.println(first(s));
+		System.out.println(rest(s));
+		System.out.println(middle(s));
+		System.out.println(length(s));
+	}
+
+	private static char first(String s) {
+		return s.charAt(0);
+	}
+	
+	private static String rest(String s) {
+		return s.substring(1);
+	}
+	
+	private static String middle(String s) {
+		return s.substring(1, s.length() - 1);
+	}
+	
+	private static int length(String s) {
+		return s.length();
+	}
+}
