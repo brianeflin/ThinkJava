@@ -1,0 +1,42 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Rational rational1 = new Rational();
+		rational1.printRational();
+		
+		Rational rational2 = new Rational(9);
+		rational2.printRational();
+		
+		Rational rational3 = new Rational(3, 5);
+		rational3.printRational();
+		
+		Rational rational4 = new Rational(-7);
+		rational4.printRational();
+		
+		Rational rational5 = new Rational(-4, 7);
+		rational5.printRational();
+		
+		Rational rational6 = new Rational(4, -7);
+		rational6.printRational();
+		
+		Rational rational7 = new Rational(4, 0);
+		rational7.printRational();
+		
+		rational2.negate();
+		rational2.printRational();
+		
+		rational3.negate();
+		rational3.printRational();
+		
+		rational4.negate();
+		rational4.printRational();
+		
+		rational6.negate();
+		rational6.printRational();
+		
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Rational rational1 = new Rational();
+		rational1.printRational();
+		
+		Rational rational2 = new Rational(9);
+		rational2.printRational();
+		
+		Rational rational2 = new Rational(-9);
+		rational2.printRational();
+		
+		Rational rational3 = new Rational(3, 5);
+		rational3.printRational();
+	}
+
+}

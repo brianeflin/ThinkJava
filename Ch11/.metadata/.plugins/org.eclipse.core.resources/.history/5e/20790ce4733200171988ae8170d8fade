@@ -1,0 +1,26 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		testTile();
+		
+		Tile tile1 = new Tile('A', 2);
+		Tile tile2 = new Tile('A', 3);
+		tile1.equals(tile2);
+		
+		Tile tile3 = new Tile('B', 2);
+		tile1.equals(tile3);
+		
+		Tile tile4 = new Tile('B', 2);
+		tile3.equals(tile4);
+	}
+	
+	private static void printTile(Tile tile) {
+		System.out.printf("%c(%d)\n", tile.getLetter(), tile.getValue());
+	}
+	
+	private static void testTile() {
+		Tile tile = new Tile('Z', 10);
+		printTile(tile);
+	}
+}

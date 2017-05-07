@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+	}
+	
+	private void printTile(Tile tile) {
+		System.out.printf("%c(%d)\n", tile.getLetter(), tile.getValue());
+	}
+}

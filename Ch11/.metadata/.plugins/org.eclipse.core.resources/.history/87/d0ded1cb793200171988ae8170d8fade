@@ -1,0 +1,23 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		testTile();
+		
+		Tile tile1 = new Tile('A', 2);
+		Tile tile2 = new Tile('A', 3);
+		printTile(tile1);
+		printTile(tile2);
+		System.out.println(tile1.equals(tile2));
+		
+		Tile tile3 = new Tile('B', 2);
+		printTile(tile1);
+		printTile(tile3);
+		System.out.println(tile1.equals(tile3));
+		
+		Tile tile4 = new Tile('B', 2);
+		printTile(tile3);
+		printTile(tile4);
+		System.out.println(tile3.equals(tile4));
+	}
+}

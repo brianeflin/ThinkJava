@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;rational&apos; in &apos;Rational.reduce()&apos; to &apos;newRat&apos;&#x0A;- Original project: &apos;RationalNumberApp&apos;&#x0A;- Original element: &apos;Rational.reduce().rational&apos;&#x0A;- Renamed element: &apos;rational&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;rational&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Rational.java[Rational~reduce@rational!1654!1692!1663!1670!QRational;!0!false" name="newRat" references="true" stamp="1494174913138" version="1.0"/>
+</session>
